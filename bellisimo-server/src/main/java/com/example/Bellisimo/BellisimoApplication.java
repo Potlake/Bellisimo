@@ -1,0 +1,26 @@
+package com.example.Bellisimo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+
+@RestController
+@EnableAutoConfiguration
+public class BellisimoApplication {
+
+	@RequestMapping("/")
+	public String sayHello()
+	{
+		return "Hello Spring Boot Application";
+	}
+	public static void main(String[] args) {
+		SpringApplication.run(BellisimoApplication.class, args);
+
+
+	}
+}
+
+
